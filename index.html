@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta charset="windows-1252" />
+    <title>Presentation des trois sites web</title>
+	<link rel="shortcut icon" href="img/favicon-32x32.png"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link id="id1" href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="jquery-ui/jquery.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			/* =Shadow Nav
+			-------------------------------------------------------------------------- */
+			// Append shadow image to each LI
+			$("#menu-anim-jquery li").append('<img class="shadow" src="img/icons-shadow.png" width="81" height="27" alt="" />');
+			// Animate buttons, shrink and fade shadow
+			$("#menu-anim-jquery li").hover(function() {
+				var e = this;
+        $(e).find("a").stop().animate({ marginTop: "-20px" }, 250, function() {
+        		$(e).find("a").animate({ marginTop: "-15px" }, 250);
+				});
+				$(e).find("img.shadow").stop().animate({ width: "80%", height: "20px", marginLeft: "8px", opacity: 0.25 }, 250);
+			},function(){
+        var e = this;
+				$(e).find("a").stop().animate({ marginTop: "5px" }, 250, function() {
+					$(e).find("a").animate({ marginTop: "0px" }, 250);
+				});
+				$(e).find("img.shadow").stop().animate({ width: "100%", height: "27px", marginLeft: "0", opacity: 1 }, 250);
+			});
+		});
+	</script>
+  </head>
+
+  <body>
+
+  
+	<div id="wrapper">
+      <ul id="menu-anim-jquery">
+        <li class="bouton-1"><a title="Menu" href="pages/honda.html">Honda</a></li>
+        <li class="bouton-2"><a title="Menu" href="pages/subaru.html">Subaru</a></li>
+        <li class="bouton-3"><a title="Menu" href="pages/mazda.html">Mazda</a></li>
+        <li class="bouton-4"><a title="Menu" href="pages/conclusion.html">Conclusion</a></li>
+      </ul>
+	  
+     </div>
+	
+	<div id='menu'>
+	<ul>
+		<li class="active"><a href='index.html'>Accueil</a></li>
+		<li class="active"><a href='#'>Honda</a>
+			
+					<ul>
+						<li><a href='pages/honda.html#p1'>Gallerie d'image</a></li>
+						<li><a href='pages/honda.html#p2'>Informations Générales</a></li>
+						<li><a href='pages/honda.html#p3'>Type de contenue</a></li>
+						<li><a href='http://www.honda.ca/'>Site Officiel</a></li>
+					</ul>
+		</li>
+			<li class='active'><a href='#'>Subaru</a>
+			
+					<ul>
+						<li><a href='pages/subaru.html#p4'>Gallerie d'image</a></li>
+						<li><a href='pages/subaru.html#p5'>Informations Générales</a></li>
+						<li><a href='pages/subaru.html#p6'>Type de contenue</a></li>
+						<li><a href='http://www.subaru.ca/WebPage.aspx?WebSiteID=282'>Site Officiel</a></li>
+					</ul>
+		</li>
+		<li class='active'><a href='#'>Mazda</a>
+			
+					<ul>
+						<li><a href='pages/mazda.html#p7'>Gallerie d'image</a></li>
+						<li><a href='pages/mazda.html#p8'>Informations Générales</a></li>
+						<li><a href='pages/mazda.html#p9'>Type de contenue</a></li>
+						<li><a href='http://www.mazda.ca/'>Site Officiel</a></li>
+					</ul>
+		</li>
+		<li><a href='pages/conclusion.html'>Conclusion</a></li>
+		<li class="active"><a span id="clickme">Changer de style</a></li> 
+		
+		<script>
+			var element = document.getElementById('clickme');
+			var change = 0;
+			element.onclick = function() {
+			if (change == 0){
+				document.getElementById('id1').href = 'css/style2.css';
+				change = 1;
+				} else {
+				document.getElementById('id1').href = 'css/style.css';
+				change = 0;
+				};
+			}; 
+		</script>
+		
+	</ul>
+	</div>
+	
+    <section class="module parallax parallax-1">
+  
+	</section>
+
+	<section class="module content">
+		<div class="container">
+			<h2>Pravith Vongphachanh</h2>
+			<h2>Présentation des trois sites web</h2>
+			
+			<video width="960" height="656" controls>
+				<source src="video/VideoMontage.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			
+		</div>
+	</section>
+
+	<section class="module parallax parallax-2">
+		<div class="container">
+			<a href="pages/honda.html"><h1>HONDA</h1></a>
+		</div>
+	</section>
+
+	<section class="module content">
+		<div class="container">
+			<center><a href="http://www.honda.ca/"><h2 id="id1">http://www.honda.ca/</h2></a></center>
+			<center><img src="img/site/honda.jpg" alt="honda" style="width:400px;height:200px;"></center>
+			<center><img src="img/images_gimp/honda_lcc.png" alt="honda" style="width:400px;height:200px;"></center>
+			<center><img src="img/images_gimp/honda_div.png" alt="honda" style="width:400px;height:200px;"></center>
+			<center><img src="img/site/honda_divdf.jpg" alt="honda" style="width:400px;height:200px;"></center>
+		</div>
+	</section>
+
+	<section class="module parallax parallax-3">
+		<div class="container">
+			<a href="pages/subaru.html"><h1>SUBARU</h1></a>
+		</div>
+	</section>
+
+	<section class="module content">
+		<div class="container">
+			<center><a href="http://www.subaru.ca/WebPage.aspx?WebSiteID=282"><h2 id="id1">http://www.subaru.ca/ </h2></a></center>
+			<center><img src="img/site/subaru.jpg" alt="subaru" style="width:400px;height:200px;"></center>
+			<center><img src="img/images_gimp/subaru_lcc.png" alt="honda" style="width:400px;height:200px;"></center>
+			<center><img src="img/images_gimp/subaru_div.png" alt="honda" style="width:400px;height:200px;"></center>
+			<center><img src="img/site/subaru_divdf.jpg" alt="honda" style="width:400px;height:200px;"></center>
+		</div>
+	</section>
+
+	<section class="module parallax parallax-4">
+		<div class="container">
+			<a href="pages/mazda.html"><h1>MAZDA</h1></a>
+		</div>
+	</section>
+
+	<section class="module content">
+		<div class="container">
+		  <center><a href="http://www.mazda.ca/"><h2 id="id1"> http://www.mazda.ca/ </h2></a></center>
+		  <center><img src="img/site/mazda.jpg" alt="mazda" style="width:400px;height:200px;"></center>
+		  <center><img src="img/images_gimp/mazda_lcc.png" alt="honda" style="width:400px;height:200px;"></center>
+		  <center><img src="img/images_gimp/mazda_div.png" alt="honda" style="width:400px;height:200px;"></center>
+		  <center><img src="img/site/mazda_divdf.png" alt="honda" style="width:400px;height:200px;"></center>
+		</div>
+	</section>
+
+	<section class="module parallax parallax-5">
+		<div class="container">
+			<a href="pages/conclusion.html"><h1>CONCLUSION</h1></a>
+		</div>
+	</section> 
+  </body>
+
+</html>

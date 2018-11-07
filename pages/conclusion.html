@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+  <head>
+	<meta charset="utf-8" />
+    <title>Conclusion</title>
+	<link rel="shortcut icon" href="images/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link id="id1" href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+
+  <body>
+  
+	<div id='menu'>
+	<ul>
+		<li class="active"><a href='index.html'>Accueil</a></li>
+		<li class="active"><a href='#'>Honda</a>
+			
+					<ul>
+						<li><a href='../pages/honda.html#p1'>Gallerie d'image</a></li>
+						<li><a href='../pages/honda.html#p2'>Informations Générales</a></li>
+						<li><a href='../pages/honda.html#p3'>Type de contenue</a></li>
+						<li><a href='http://www.honda.ca/'>Site Officiel</a></li>
+					</ul>
+		</li>
+			<li class='active'><a href='#'>Subaru</a>
+			
+					<ul>
+						<li><a href='../pages/subaru.html#p4'>Gallerie d'image</a></li>
+						<li><a href='../pages/subaru.html#p5'>Informations Générales</a></li>
+						<li><a href='../pages/subaru.html#p6'>Type de contenue</a></li>
+						<li><a href='http://www.subaru.ca/WebPage.aspx?WebSiteID=282'>Site Officiel</a></li>
+					</ul>
+		</li>
+		<li class='active'><a href='#'>Mazda</a>
+			
+					<ul>
+						<li><a href='../pages/mazda.html#p7'>Gallerie d'image</a></li>
+						<li><a href='../pages/mazda.html#p8'>Informations Générales</a></li>
+						<li><a href='../pages/mazda.html#p9'>Type de contenue</a></li>
+						<li><a href='http://www.mazda.ca/'>Site Officiel</a></li>
+					</ul>
+		</li>
+		<li><a href='pages/conclusion.html'>Conclusion</a></li>		
+		<li class="active"><a span id="clickme">Changer de style</a></li> 
+		
+		<script>
+			var element = document.getElementById('clickme');
+			var change = 0;
+			element.onclick = function() {
+			if (change == 0){
+				document.getElementById('id1').href = '../css/style2.css';
+				change = 1;
+				} else {
+				document.getElementById('id1').href = '../css/style.css';
+				change = 0;
+				};
+			}; 
+		</script>
+	</ul>
+	</div>
+	
+	<section class="module parallax parallax-5">
+		<div class="container">
+			<a href="../index.html"><h1>CONCLUSION</h1></a>
+		</div>
+	</section>
+
+	<section class="module content">
+		<div class="container">
+			<h3>Pour conclure, les trois sites présentent assez d'images pour faire valoir leur produit et leur immense choix d'autos. 
+				<br>Vu que c’est des sites fait par leur propre compagnie, on ne voit aucune trace de publicité extérieure. L’entretien de leur site est donc fait par les employés de leur compagnie.</br>
+				<br>Les trois sites ont des défilements d’images pour montrer leur spéciaux ou bien pour faire leur publicité et vanter leur produit. Ils ont même une option pour « construire » son propre auto en choisissant la couleur ou les spécifications de l’auto désiré et avoir un aperçu de leur char.</br>
+				<br>Les sites de Honda et Subaru utilise des fonds de couleur clair tandis que le site de Mazda utilise un fonds noir, mais tout reste vraiment classe et chacun leur avantage pour rendre fascinant les clients qui visitent leur site.</br> 
+</h3>
+	</section>
+	
+  </body>
+
+</html>

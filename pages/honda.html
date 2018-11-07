@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+  <head>
+  
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http:/resources/demos/style.css">
+  
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Auto Honda</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="shortcut icon" href="images/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>	
+	<script src="../jquery/jquery-2.1.4.js"></script>
+	<script src="../jquery-ui/jquery.js"></script>
+	<link id="id1" href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+	
+	<script>
+	$( document ).ready(function() {
+    $("#img1").click(function() {
+		var srcimg = $(this).attr('src');
+		var imgWidth = srcimg.width;
+		var imgHeight = srcimg.height;
+		$("#grosImg1").hide("fast");
+		$("#grosImg1").attr("src",srcimg);
+		$("#grosImg1").show("fast");
+		$( "#aa" ).text( 'NomFichier: Honda Logo Taile pixel : 900 x 540 Format : PNG Dimension: 27 ko Elle vient pas du site. Plus grand format graphique.'  );
+	  });
+	$("#img2").click(function() {
+		var srcimg = $(this).attr('src');
+		$("#grosImg1").hide("fast");
+		$("#grosImg1").attr("src",srcimg);
+		$("#grosImg1").show("fast");
+		$( "#aa" ).text( 'NomFichier: Honda#5 Taile pixel : 2560 x 1600 Dimension: 885 ko Elle ne vient pas du site. Plus grand format graphique.'  );
+		});
+	$("#img3").click(function() {
+		var srcimg = $(this).attr('src');
+		$("#grosImg1").hide("fast");
+		$("#grosImg1").attr("src",srcimg);
+		$("#grosImg1").show("fast");
+		$( "#aa" ).text( 'NomFichier: gundam Taile pixel: 4128 x 2322 Distance Focale: 4.1mm Temps dexposition: 0.059s ISO: 400 Dimension: 2667 ko Date: 2015/11/26 23:59:52'  );
+		});
+	$("#img4").click(function() {
+		var srcimg = $(this).attr('src');
+		$("#grosImg1").hide("fast");
+		$("#grosImg1").attr("src",srcimg);
+		$("#grosImg1").show("fast");
+		$( "#aa" ).text( 'NomFichier: Mazda H Taile pixel: 4128 x 2322 Distance Focale: 4.1mm Temps dexposition: 0.057s ISO: 50 Dimension: 2681 ko Date: 2015/11/26 12:40:49'  );
+		});
+	});
+	</script>
+	
+	<script>
+	$(function() {
+		$('.miniature').css('border','5px white solid');
+		$('img:first').css('border','5px black solid');
+		$('.miniature').click(function() {
+		$('img').css('border','5px white solid');
+		$(this).css('border','5px black solid');
+		$('#grand').css('width',20);
+		$('#grand').css('height',20);
+		var nom = $(this).attr('src');
+		var positionPetit = $(this).offset();
+		var positionGrand = $('#grand').offset();
+			positionGrand.top = positionPetit.top;
+			positionGrand.left = positionPetit.left;
+		$('#grand').offset(positionGrand);
+		$('#grand').attr('src',nom);
+		$('#grand').stop().animate({'width':'500','height': '500','top': '0','left': '0'},1500);
+		});  
+	});
+	</script>
+	
+	<script>
+	$(function() {
+		$('.miniature1').css('border','5px white solid');
+		$('img:first').css('border','5px black solid');
+		$('.miniature1').click(function() {
+		$('img').css('border','5px white solid');
+		$(this).css('border','5px black solid');
+		$('#grand1').css('width',20);
+		$('#grand1').css('height',20);
+		var nom = $(this).attr('src');
+		var positionPetit = $(this).offset();
+		var positionGrand = $('#grand1').offset();
+			positionGrand.top = positionPetit.top;
+			positionGrand.left = positionPetit.left;
+		$('#grand1').offset(positionGrand);
+		$('#grand1').attr('src',nom);
+		$('#grand1').stop().animate({'width':'500','height': '500','top': '0','left': '0'},1500);
+		});  
+	});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			/* =Shadow Nav
+			-------------------------------------------------------------------------- */
+			// Append shadow image to each LI
+			$("#menu-anim-jquery li").append('<img class="shadow" src="../img/icons-shadow.png" width="81" height="27" alt="" />');
+			// Animate buttons, shrink and fade shadow
+			$("#menu-anim-jquery li").hover(function() {
+				var e = this;
+        $(e).find("a").stop().animate({ marginTop: "-20px" }, 250, function() {
+        		$(e).find("a").animate({ marginTop: "-15px" }, 250);
+				});
+				$(e).find("img.shadow").stop().animate({ width: "80%", height: "20px", marginLeft: "8px", opacity: 0.25 }, 250);
+			},function(){
+        var e = this;
+				$(e).find("a").stop().animate({ marginTop: "5px" }, 250, function() {
+					$(e).find("a").animate({ marginTop: "0px" }, 250);
+				});
+				$(e).find("img.shadow").stop().animate({ width: "100%", height: "27px", marginLeft: "0", opacity: 1 }, 250);
+			});
+		});
+	</script>
+	
+  </head>
+
+  <body>
+  
+  
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	 
+	<script>
+	  $(function() {
+		$( "#accordion" ).accordion({
+		event : 'click'
+		});
+	  });
+	 </script>
+	 
+  
+	<div id='menu'>
+	
+	<ul>
+		<li class="active"><a href='../index.html'>Accueil</a></li>
+		<li class="active"><a href='#'>Honda</a>
+			
+					<ul>
+						<li><a href='../pages/honda.html#p1'>Gallerie d'image</a></li>
+						<li><a href='../pages/honda.html#p2'>Informations Générales</a></li>
+						<li><a href='../pages/honda.html#p3'>Type de contenue</a></li>
+						<li><a href='http://www.honda.ca/'>Site Officiel</a></li>
+					</ul>
+		</li>
+			<li class='active'><a href='#'>Subaru</a>
+			
+					<ul>
+						<li><a href='../pages/subaru.html#p4'>Gallerie d'image</a></li>
+						<li><a href='../pages/subaru.html#p5'>Informations Générales</a></li>
+						<li><a href='../pages/subaru.html#p6'>Type de contenue</a></li>
+						<li><a href='http://www.subaru.ca/WebPage.aspx?WebSiteID=282'>Site Officiel</a></li>
+					</ul>
+		</li>
+		<li class='active'><a href='#'>Mazda</a>
+			
+					<ul>
+						<li><a href='../pages/mazda.html#p7'>Gallerie d'image</a></li>
+						<li><a href='../pages/mazda.html#p8'>Informations Générales</a></li>
+						<li><a href='../pages/mazda.html#p9'>Type de contenue</a></li>
+						<li><a href='http://www.mazda.ca/'>Site Officiel</a></li>
+					</ul>
+		</li>
+		<li><a href='../pages/conclusion.html'>Conclusion</a></li>		
+		<li class="active"><a span id="clickme">Changer de style</a></li> 
+		
+		<script>
+			var element = document.getElementById('clickme');
+			var change = 0;
+			element.onclick = function() {
+			if (change == 0){
+				document.getElementById('id1').href = '../css/style2.css';
+				change = 1;
+				} else {
+				document.getElementById('id1').href = '../css/style.css';
+				change = 0;
+				};
+			}; 
+		</script>
+	</ul>
+	</div>
+	
+    <section class="module parallax parallax-2">
+		<div class="container">
+			<a href="../index.html"><h1>HONDA</h1></a>
+		</div>
+	</section>
+	
+	<div id="wrapper">
+      <ul id="menu-anim-jquery">
+        <li class="bouton-1"><a title="Menu" href="../index.html">Accueil</a></li>
+        <li class="bouton-2"><a title="Menu" href="../pages/subaru.html">Subaru</a></li>
+        <li class="bouton-3"><a title="Menu" href="../pages/mazda.html">Mazda</a></li>
+        <li class="bouton-4"><a title="Menu" href="../pages/conclusion.html">Conclusion</a></li>
+      </ul>
+	  
+     </div>
+	 
+	 
+	 
+	<section class="module content">
+		<div class="container">
+		
+		<video width="960" height="656" controls>
+			<source src="../video/honda.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		
+		<p>ORIGINALE</p>
+		<img src="../img/site/hondaOriginal.png" alt="honda" height="656" width="1000"/>
+		<p>Version diminuer</p>
+		<img src="../img/site/hondavideo.png" alt="honda" height="656" width="1000"/>
+		
+		<div id="accordion">
+			<h2 id="p1">Gallerie d'image</h2>
+			<div>
+			<img src="http://www.honda.ca/Content/honda.ca/en/2015/accord_hybrid/hybrid_10300/DefaultGroup_Top_Tout/2015_Accord_Hybrid_Hero_EN.png?Crop=auto&maxwidth=400&maxheight=200"" alt="honda" class="miniature"  height="100" width="100"/>
+			<img src="../img/site/honda2.jpg" alt="honda" class="miniature"  height="100" width="100"/>
+			<img src="../img/site/honda3.jpg" alt="honda" class="miniature"  height="100" width="100"/>
+			<img src="../img/site/honda4.jpg" alt="honda" class="miniature"  height="100" width="100"/>
+			<img id="grand" src="http://www.honda.ca/Content/honda.ca/en/2015/accord_hybrid/hybrid_10300/DefaultGroup_Top_Tout/2015_Accord_Hybrid_Hero_EN.png?Crop=auto&maxwidth=400&maxheight=200" width="500" height="500"/>
+			</div>
+			<h2 id="p1">Gallerie d'image 2 pour TP3</h2>
+			<div>
+			<img src="../img/site/gundam.jpg" id="img3" alt="honda" class="miniature1"  height="100" width="100"/>
+			<img src="../img/site/mazdah.jpg" id="img4" alt="honda" class="miniature1"  height="100" width="100"/>
+			<img src="../img/images_gimp/hondalogo_ct.png" alt="honda" id="img1" class="miniature1"  height="100" width="100"/>
+			<img src="../img/site/honda5.jpg" id="img2" alt="honda" class="miniature1"  height="100" width="100"/>
+			<img id="grosImg1" src="../img/images_gimp/hondalogo_ct.png" width="500" height="500"/>
+			<p id="aa">.</p>
+			</div>
+			<h2 id="p2">Informations générales sur le site</h2>
+			<div>
+			<table border="1" style="width:50%">
+					<tr>
+						<td>Couleur ou image de fond</td>
+						<td>Couleur gris</td> 
+					</tr>
+					<tr>
+						<td>Couleur(s) de texte</td>
+						<td>Couleur gris pâle dans l'accueil, noir dans les onglets de commande</td> 
+					</tr>
+					<tr>
+						<td>Interface(s) de navigation</td>
+						<td>8 commandes de sélection, images liens, francais/anglais</td> 
+					</tr>
+					<tr>
+						<td>Nombre d'écrans</td>
+						<td>Résolution de 1920x1080, 2 écrans</td> 
+					</tr>
+					<tr>
+						<td>Présence d'un ou plusieurs vidéo(s) et/ou animation(s)</td>
+						<td>Défilement d'image sur la page d'accueil</td> 
+					</tr>
+					<tr>
+						<td>Publicité</td>
+						<td>aucun sauf pour leur propre produit</td> 
+					</tr>
+				</table> 
+			</div>
+			<h2 id="p3">Type de contenu</h2>
+			<div>
+			<table border="1" style="width:50%">
+					<tr>
+						<td>JQUERY interne, externe ou librairie</td>
+						<td>externe</td> 
+					</tr>
+				</table>
+			</div>	
+		</div>	
+			
+		</div>
+		
+	</section>
+	
+	
+  </body>
+
+</html>
